@@ -88,19 +88,18 @@
             }
             updateBannerVisibility();
         }
-
         var buildUrl = "Build";
-        var loaderUrl = buildUrl + "/Hare.loader.js";
-        var config = {
-            dataUrl: buildUrl + "/Hare.data",
-            frameworkUrl: buildUrl + "/Hare.framework.js",
-            codeUrl: buildUrl + "/Hare.wasm",
-            streamingAssetsUrl: "StreamingAssets",
-            companyName: "DefaultCompany",
-            productName: "Hare",
-            productVersion: "1.0",
-            showBanner: unityShowBanner,
-        };
+      var loaderUrl = buildUrl + "/Hare.loader.js";
+      var config = {
+        dataUrl: buildUrl + "/Hare.data.unityweb",
+        frameworkUrl: buildUrl + "/Hare.framework.js.unityweb",
+        codeUrl: buildUrl + "/Hare.wasm.unityweb",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "Hare",
+        productVersion: "1.0",
+        showBanner: unityShowBanner,
+      };
 
         // By default, Unity keeps WebGL canvas render target size matched with
         // the DOM size of the canvas element (scaled by window.devicePixelRatio)
